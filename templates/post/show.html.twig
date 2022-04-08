@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+{% block title %}By id{% endblock %}
+{% block body %}
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>content</th>
+            <th>date</th>
+        </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <td>{{ thePost.id }}</td>
+                <td>{{ thePost.title }}</td>
+                <td>{{ thePost.content }}</td>
+                <td>{{ thePost.datePublication|date("d/m/Y") }}</td>
+
+
+            </tr>
+      
+        </tbody>
+    </table>
+
+
+
+
+{% endblock %}
